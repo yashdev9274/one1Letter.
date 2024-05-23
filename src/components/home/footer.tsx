@@ -46,7 +46,7 @@ const Footer = () => {
                             className="h-7 w-auto"
                         />
                         <p className="text-md max-w-xs leading-6 text-gray-700">
-                            Only tool you'll required for marketing as a developer.
+                            Only tool you wll need for marketing as a developer.
                         </p>
                         <div className="flex space-x-6 text-sm text-gray-700">
                             <div>Made with ❤️ by Yash.</div>
