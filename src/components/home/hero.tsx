@@ -1,4 +1,7 @@
+'use client'
+
 import React from 'react'
+import { ArrowRight, Github, Twitter } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -6,6 +9,33 @@ const Hero = () => {
 
             <div className="pt-11">
                 <div className="relative mx-auto flex max-w-2xl flex-col items-center">
+
+                    <header className="flex items-center justify-between py-8">
+                        <nav className="flex gap-6">
+                            <a
+                                href="https://twitter.com/dew_yashtwt"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex"
+                            >
+                                <Twitter
+                                    className="h-6 w-6 text-neutral-800 transition-colors hover:text-neutral-600 dark:text-neutral-200 dark:hover:text-neutral-400"
+                                    strokeWidth={1.5}
+                                />
+                            </a>
+                            <a
+                                href="https://github.com/yashdev9274/one1letter."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex"
+                            >
+                                <Github
+                                    className="h-6 w-6 text-neutral-800 transition-colors hover:text-neutral-600 dark:text-neutral-200 dark:hover:text-neutral-400"
+                                    strokeWidth={1.5}
+                                />
+                            </a>
+                        </nav>
+                    </header>
                     <div className="mb-8 flex">
                         <a
                             href="https://github.com/ibelick/background-snippets"
@@ -16,7 +46,7 @@ const Hero = () => {
                             <span className="relative inline-block overflow-hidden rounded-full p-[1px]">
                                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#a9a9a9_0%,#0c0c0c_50%,#a9a9a9_100%)] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#171717_0%,#737373_50%,#171717_100%)]" />
                                 <div className="inline-flex h-full w-full cursor-pointer justify-center rounded-full bg-slate-950 px-3 py-1 text-xs font-medium leading-5 text-white backdrop-blur-xl dark:bg-black dark:text-slate-200">
-                                    New snippets ⚡️
+                                    New product ⚡️
                                     <span className="inline-flex items-center pl-2 text-white dark:text-black">
                                         Read more{' '}
                                         {/* <ArrowRight
