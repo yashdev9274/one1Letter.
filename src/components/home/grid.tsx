@@ -44,7 +44,7 @@ const files = [
 const features = [
     {
         Icon: FileTextIcon,
-        name: "Save your files",
+        name: "Save your newsletters",
         description: "We automatically save your files as you type.",
         href: "/",
         cta: "Learn more",
@@ -104,7 +104,7 @@ const features = [
     {
         Icon: GlobeIcon,
         name: "Multilingual",
-        description: "Supports 100+ languages and counting.",
+        description: "One1Letter is used by developers from all around the globe.",
         href: "/",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
