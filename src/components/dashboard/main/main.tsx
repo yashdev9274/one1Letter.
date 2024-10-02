@@ -9,8 +9,12 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 // import { LineChart, BarChart } from '@/components/ui/chart'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Bell, ChevronDown, Home, Mail, Users, BarChart2, FileText, Settings, Search, PlusCircle } from 'lucide-react'
+import { User } from '@clerk/nextjs/server'
+// import { useUser } from '@clerk/nextjs'
 
 export default function DashboardUi() {
+
+    const { user } = useUser()
     return (
         <div className="flex h-screen bg-black text-gray-100">
             {/* Sidebar */}
@@ -46,7 +50,7 @@ export default function DashboardUi() {
             <div className="flex-1 flex flex-col overflow-hidden">
                 {/* Top Bar */}
                 <header className="flex items-center justify-between p-4 bg-black">
-                    <h2 className="text-xl font-semibold">Dashboard</h2>
+                    <h2 className="text-xl font-semibold"> Hi {user?.firstName} 👋🏼 Welcome back!</h2>
                     <div className="flex items-center space-x-4">
                         <Button variant="ghost" size="icon">
                             <Bell className="h-5 w-5" />
